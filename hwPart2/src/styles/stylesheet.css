@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nike {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.nike__product-block {
+    background-color: #152335;
+    height: 390px;
+    max-height: 390px;
+    width: 685px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
+    max-width: 100%;
+}
+
+.nike__img-wrapper img {
+    padding: 20px 0 0 20px;
+}
+
+.nike__product {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.nike__product_img-wrapper {
+    padding: 60px 0 45px;
+}
+
+.nike__product_img-block_item{
+    padding: 0 3px;
+}
+
+.nike__product_inform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nike__product_inform_select {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nike__inform_title {
+    max-width: 200px;
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+}
+
+.nike__product_inform_text-wrap {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    color: grey;
+}
+
+.nike__btn {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.nike__btn-color_1 {
+    background-color: #293550;
+}
+
+.nike__btn-color_2 {
+    background-color: #FFFFFF;
+}
+
+.nike__btn-color_3 {
+    background-color: #F34B42;
+}
+
+.nike__btn-color_4 {
+    background-color: #24E7EE;
+}
+
+.nike__btn:focus {
+    border: 1px solid #90959D;
+}
+
+.nike__product_img-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nike__product_inform_rating {
+	overflow: hidden;
+    max-width: 67px;
+    padding: 15px 0;
+}
+
+.nike__product_inform_form_size, .nike__product_inform_form_qty {
+    height: 32px;
+    width: 69px;
+    text-align: center;
+    margin-right: 1px;
+    background: none;
+    border: 1px solid #626873;
+    color: #727881;
+}
+
+.nike__product_inform_select {
+    padding-bottom: 20px;
+}
+
+.nike__product_inform_form_button {
+    height: 40px;
+    width: 184px;
+    background-color: #2A3545;
+    border: 1px solid #626873;
+    color: #727881;
+    cursor: pointer;
+}
+
+.nike__product_img-block_list {
+    list-style: none;
+    display: flex;
+}
+
+.nike__product_inform_rating:not(:checked) > input {
+	display: none;
+}
+
+.nike__product_inform_rating:not(:checked) > label {
+    float: right;
+	padding: 0;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px 1px #bbb;
+}
+
+.nike__product_inform_rating:not(:checked) > label:before {
+	content: '★';
+}
+
+.nike__product_inform_rating > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.nike__product_inform_rating:not(:checked) > label:hover,
+.nike__product_inform_rating:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+
+.nike__product_inform_rating > input:checked + label:hover,
+.nike__product_inform_rating > input:checked + label:hover ~ label,
+.nike__product_inform_rating > input:checked ~ label:hover,
+.nike__product_inform_rating > input:checked ~ label:hover ~ label,
+.nike__product_inform_rating > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+
+.nike__product_inform_rating > label:active {
+	position: relative;
+}

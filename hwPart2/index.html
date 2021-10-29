@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/stylesheet.css">
+    <title>Nike</title>
+</head>
+<body>
+    <main class="nike">
+        <article class="nike__product-block">
+            <a href="#" class="nike__img-wrapper">
+                <img src="src/img/logo.png" alt="nike-logo">
+            </a>
+            <div class="nike__product">
+                <div class="nike__product_img-block">
+                    <div class="nike__product_img-wrapper">
+                        <img src="src/img/Nike-SB-Stefan-Janoski-Max.png" alt="boots">
+                    </div>
+                    <ul class="nike__product_img-block_list">
+                        <li class="nike__product_img-block_item">
+                            <button autofocus class="nike__btn nike__btn-color_1"></button>
+                        </li>
+                        <li class="nike__product_img-block_item">
+                            <button class="nike__btn nike__btn-color_2"></button>
+                        </li>
+                        <li class="nike__product_img-block_item">
+                            <button class="nike__btn nike__btn-color_3"></button>
+                        </li>
+                        <li class="nike__product_img-block_item">
+                            <button class="nike__btn nike__btn-color_4"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nike__product_inform">
+                    <h1 class="nike__inform_title">Nike SB Stefan Janoski Max</h1>
+                    <div class="nike__product_inform_text-wrap">
+                        <span>Unisex Skateboarding Shoe</span>
+                    </div>
+                    <form action="#" class="nike__product_inform_form">
+                        <div class="nike__product_inform_rating">
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label for="star-5" title="Оценка «5»"></label>	
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label for="star-4" title="Оценка «4»"></label>    
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label for="star-3" title="Оценка «3»"></label>  
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label for="star-2" title="Оценка «2»"></label>    
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label for="star-1" title="Оценка «1»"></label>
+                        </div>
+                        <div class="nike__product_inform_select">
+                            <select name="Size" id="size" class="nike__product_inform_form_size">
+                                <option>Size</option>
+                                <option value="33-36">33-36</option>
+                                <option value="37-40">37-40</option>
+                                <option value="41-44">41-44</option>
+                                <option value="45-48">45-48</option>
+                            </select>
+                            <select name="Qty" id="qty" class="nike__product_inform_form_qty">
+                                <option>Qty</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="nike__product_inform_form_button">
+                            Add to cart
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
